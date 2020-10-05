@@ -6,7 +6,6 @@ const mongoose = require("mongoose");
 const myUsersRoute = require("./routes//myUsersRoute");
 const userRoute = require("./routes/userRoute");
 const app = express();
-
 app.use(bodyParser.json());
 app.use(fileUpload());
 app.use("/uploads", express.static(path.join("uploads")));
@@ -23,7 +22,7 @@ app.use((req, res, next) => {
 app.use("/api/myusers", myUsersRoute);
 app.use("/api/user", userRoute);
 
-const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.dxdci.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+const url= `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.dxdci.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 mongoose
   .connect(url)
