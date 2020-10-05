@@ -5,7 +5,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const myUsersRoute = require("./routes//myUsersRoute");
 const userRoute = require("./routes/userRoute");
-const Pusher = require("pusher");
+//const Pusher = require("pusher");
 const app = express();
 // const pusher = new Pusher({
 //   app_id: "1072697",
