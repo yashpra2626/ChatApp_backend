@@ -3,7 +3,7 @@ const { validationResult } = require("express-validator");
 const User = require("../models/user");
 const { v4: uuidv4 } = require("uuid");
 const jwt = require("jsonwebtoken");
-//const pusher = require("../pusher");
+
 
 
 const signUp = async (req, res, next) => {

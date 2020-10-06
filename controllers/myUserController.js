@@ -4,7 +4,6 @@ const myUser = require("../models/myUser");
 const User = require("../models/user");
 const mongoose = require("mongoose");
 const fs = require("fs");
-//const pusher = require("../pusher");
 
 const getUsers = async (req, res, next) => {
   let users;

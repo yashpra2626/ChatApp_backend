@@ -3,7 +3,7 @@ const fileUpload = require("express-fileupload");
 const bodyParser = require("body-parser");
 const path = require("path");
 const mongoose = require("mongoose");
-const myUsersRoute = require("./routes//myUsersRoute");
+const myUsersRoute = require("./routes/myUsersRoute");
 const userRoute = require("./routes/userRoute");
 const app = express();
 app.use(bodyParser.json());
